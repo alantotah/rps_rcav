@@ -1,3 +1,11 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  # get("/", {:controller => "home", :action => "index"})
+
+  get("/rock", {:controller => "games", :action => "play_rock" })
+
+  get("/scissors", {:controller => "games", :action => "play_scissors"})
+
+  get("/paper", {:controller => "games", :action => "play_paper"})
+
 end
